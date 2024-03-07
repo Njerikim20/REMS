@@ -1,3 +1,4 @@
+
 from tkinter import*
 from dashboard import *
 from PIL import Image, ImageTk
@@ -20,8 +21,6 @@ resize_img=img.resize((80,80))
 propertyimg=ImageTk.PhotoImage(resize_img)
 Label(root,image=propertyimg).place(x=300,y=80)
 
-
-
 def property_instance():
     prop=property(root)
     
@@ -40,7 +39,11 @@ Label(root,image=tenantimg).place(x=480,y=80)
 def tenant_instance():
     tena=tenant(root)
 
+
 tenbtn=Button(root, text="Tenants",font=font_type,border=2,fg="brown",command=tenant_instance).place(x=480,y=170)
+
+
+
 
 #finances
 
